@@ -2,5 +2,8 @@
   "name": "chronogolf-frontend-test",
   "version": "1.0.0",
   "author": "Chronogolf",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^7.3.5"
+  }
 }
