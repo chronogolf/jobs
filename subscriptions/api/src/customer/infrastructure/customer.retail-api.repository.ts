@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CustomerRepository, Customer } from '../core';
+import { Customer } from '../core';
 import * as RETAIL_RESPONSE from '../../__mocks__/customers.retail-api.json';
 
 @Injectable()
-export class CustomerRetailAPIRepository implements CustomerRepository {
+export class CustomerRetailAPIRepository {
   private _customers: Customer[] = [];
 
   constructor() {
