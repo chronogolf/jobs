@@ -2,8 +2,14 @@
 
 Step 1: BE Test
 
-- Existing app with a controller calling a service to get customers from Retail and format them to Subscriptions model
-- Create the service allowing to get customers from Ecom (different model than Retail) and format them to Subscriptions model
-- Giving the ability to do tests, either before, during or after implementation
+- We recently pushed some modifications to our code and one of our tests is failing. Please fix it :)
+
+To run the test command: `npm run test`
+
+- We've recently received the request to integrate our service to the ecom API (see `src/___mocks___` directory).
+  Our implementation only allows the Retail API integration.
+  Please write the required modifications to the actual code to support this.
+
+- Feel free to add new or update some existing specs as you see fit
 
 Step 2: Open Questions
