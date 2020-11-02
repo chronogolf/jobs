@@ -28,10 +28,21 @@ describe('CustomerRetailAPIRepository', () => {
 
   describe('findAll', () => {
     let result: Customer[];
-    let retailSpy: jest.SpyInstance;
 
-    /////////////////
-    //     TODO    //
-    /////////////////
+    beforeEach(async () => {
+      result = await repository.findAll();
+    });
+
+    it('returns customers', () => {
+      expect(result.length).toBe(13);
+    });
+
+    it('maps external fields to our local one', () => {
+      expect(result[0]).toMatchObject({
+        firstName: 'Miles',
+        lastName: 'Morales',
+        email: 'milesmorales@lightspeedhq.com',
+      });
+    });
   });
 });
