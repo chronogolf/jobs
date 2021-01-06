@@ -14,39 +14,37 @@ class BookingEngine
 end
 ```
 
+**Step 0**
+
+Get set up.
+
+1. Clone the repo with the method of your choice (GitHub offers several options from the UI)
+2. `cd` into your local copy of the project
+3. From the terminal, run `bundle install` to install the dependencies
+4. Still from the terminal, run `rspec` to run the test suite
+
 **Step 1**
 
-The booking engine must implement the following rules:
+Oh no! Specs are failing. Looks like we have a bug.
+Have a look and fix it.
+
+**Step 2**
+
+Now that you have access to the list of reservations, update the system to accept
+new reservation request following the data structure in place.
+
+Can you add a test to confirm that the system returns all reservations?
+
+**Step 3**
+
+As any other booking system, reservation must follow some business rules.
+Update the system to validate new reservation request against these 2 rules:
 
 - A minimum of 10 minutes between start times
 - For a given player, each reservation must be at least 2 hours apart
 
-To get started, here is the list of confirmed reservations.
+The system should only accept valid requests.
 
-```ruby
-[
-  { id: 1, starts_at: "2020-02-01 06:00:00 -0500", player: "Anna" },
-  { id: 2, starts_at: "2020-02-01 06:10:00 -0500", player: "Mike" },
-  { id: 3, starts_at: "2020-02-01 06:20:00 -0500", player: "Mary" }
-]
-```
-
-**Step 2**
-
-Once the engine is in place, demonstrate how the system can handle a request for
-a reservation and mark it as "confirmed" if valid.
-
-The expected output is to append the list of reservations with the new request.
-
-**Step 3**
-
-Finally, let's assume that the Front-End team expects a payload that lists all
-reservations.
-
-Update your code to be able to return a payload meeting the following
-requirements:
-
-- JSON format
-- Pagination (2 records per page)
+Make sure specs remain green.
 
 [crest]: https://cdn2.chronogolf.com/assets/logos/Github%20-%20Header.png
