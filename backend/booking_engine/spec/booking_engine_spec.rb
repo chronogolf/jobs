@@ -12,24 +12,22 @@ RSpec.describe BookingEngine do
   describe ".all" do
     subject { described_class.all }
 
-    it "returns returns all reservations" do
+    it "returns all reservations" do
       is_expected.to have_attributes(size: 3)
     end
 
-    xdescribe "the first reservation" do
+    describe "the first reservation" do
       subject { described_class.all.first }
 
       it "has an id and name" do
-        is_expected.to have_attributes(
+        is_expected.to include(
           id: 1,
-          name: "Anna"
+          player: "Anna"
         )
       end
 
       it "parses the start time" do
-        is_expected.to have_attributes(
-          start_at: Time.new(2020, 2, 1, 6)
-        )
+        expect(Time.parse(subject[:starts_at])).to eq(Time.new(2020, 2, 1, 6))
       end
     end
   end
