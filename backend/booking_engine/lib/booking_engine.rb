@@ -1,7 +1,17 @@
 # frozen_string_literal: true
 
-require "yaml"
+require "json"
 
 class BookingEngine
-  RESERVATIONS = YAML.load(File.read("./lib/reservation.yml")).shuffle
+  def self.all
+    @all ||= JSON.parse File.read("#{__dir__}/reservations.json")
+  end
+
+  def self.create(attributes)
+    # ...
+  end
+
+  def self.valid?
+    # ...
+  end
 end
