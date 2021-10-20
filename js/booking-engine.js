@@ -17,7 +17,7 @@ reservationService.addReservation({
 
 class ReservationService {
     constructor() {
-        this.reservations = [] // interviewee might use a different data structure (eg. key - value object)
+        this.reservations = [] // candidate might use a different data structure (eg. key - value object)
     }
 
     getReservations() {
