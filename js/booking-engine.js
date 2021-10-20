@@ -72,7 +72,7 @@ reservationService.updateReservation(new Date(2021, 01, 01, 6, 40, 0), {
     time: new Date(2021, 01, 01, 6, 50, 0)
 })
 
-// invalid reservation (no matching slot)
+// invalid reservation update (no matching slot)
 reservationService.updateReservation(new Date(2021, 01, 01, 6, 0, 0), {
     name: 'John Daly',
     time: new Date(2021, 01, 01, 6, 50, 0)
