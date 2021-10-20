@@ -1,13 +1,14 @@
 /*
-Run using `node js/booking-engine.js`
+Setup:
+1. Pull the public GH repo jobs
+2. Run using `node js/booking-engine.js`
 
 Instructions:
 1. Create a reservation booking engine service that can book reservation for a golfer by name and time of day (expecting candidate to use a JS class)
 2. We want to extend the capability of the reservation engine to only allow reservations to be booked at 10 minute increments (expecting candidate to lookup epoch time + handle logic to check for 10 minute increments on the hour)
-3. Further, we wish to add the ability to updated existing reservations (expecting candidate to define api contract with service here, either they)
+3. Further, we wish to add the ability to updated existing reservations (expecting candidate to define api contract with service here)
 
 Sample usage:
-
 reservationService.addReservation({
     name: 'Tiger Woods',
     time: new Date(2021, 01, 01, 6, 30, 0)
@@ -77,3 +78,5 @@ reservationService.updateReservation(new Date(2021, 01, 01, 6, 0, 0), {
     time: new Date(2021, 01, 01, 6, 50, 0)
 })
 console.log(reservationService.getReservations())
+
+// Further we can ask for testing conditions (time permitting)
