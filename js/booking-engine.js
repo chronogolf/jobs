@@ -1,5 +1,5 @@
 /*
-Run using `node frontend/booking-engine/booking-engine.js`
+Run using `node js/booking-engine.js`
 
 Instructions:
 1. Create a reservation booking engine service that can book reservation for a golfer by name and time of day (expecting candidate to use a JS class)
