@@ -2,7 +2,7 @@
 Running instructions:
 1. Clone repo `chronogolf/jobs`
 2. Checkout branch `booking-engine-js`
-3. Run using `node jobs/booking-engine.js`
+3. Run using `node booking-engine.js`
 
 Challend:
 1. We wish to create a reservation booking engine service that can book reservation for a golfer by name and time of day.
