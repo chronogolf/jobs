@@ -13,15 +13,17 @@ validates reservation requests and returns a list of confirmed reservations.
 
 </br>
 
-As you interview, be mindful of the following things:
+As you interview, be mindful of the following things overall:
 
 - Is the candidate a person we would enjoy working with?
 - Is the candidate receptive to feedback?
 - Did the candidate showcase any toxic or inappropriate behaviour?
+- Will the candidate be interested in the work and culture we can provide?
 
----
+#
 
 ## Environment Setup
+
 You can use this prompt to align on what environment will be used for the challenge:
 > Let's take care of your setup first.
 > - Choose a dev environment and a language that suits you
@@ -39,7 +41,8 @@ Example seed data for existing reservations:
 {"starts_at": "2020-02-01T06:20:00.000-05:00", "player": "Mary"}
 ```
 
----
+#
+
 ## The Challenge
 
 </br>
