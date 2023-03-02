@@ -3,7 +3,7 @@
 # The Booking Engine challenge
 
 ## Intro to Building a Booking Engline
-You can use this prompt to introduce the the challenge and explain a little about our app:
+You can use this prompt to introduce the challenge and explain a little about our app:
 > Golf clubs manage player reservations through our system. When a player wants to
 make a reservation, they request it through a booking engine. The system will
 then confirm if the submitted reservation is valid.
